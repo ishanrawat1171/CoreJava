@@ -1,9 +1,10 @@
 package com.ltts.Hash;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Scanner;
-
+import java.util.TreeSet;
 public class PlayerOf {
 
 	public static void main(String[] args) {
@@ -19,7 +20,9 @@ public class PlayerOf {
 	    	st=in1.nextLine();
 	    	set.add(st);
 	    }
-	         Iterator<String> inn=set.iterator();  
+
+        TreeSet<String> treeSet = new TreeSet<String>(set); 
+	         Iterator<String> inn=treeSet.iterator();  
 	           while(inn.hasNext())  
 	           {  
 	            
